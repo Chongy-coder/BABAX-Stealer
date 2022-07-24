@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace DebuggerStepThroughAttribute
 {
-    class Program
+    internal class NewBaseType
     {
-        static void Main(string[] args)
-        {
-            MethPropWithInstMemo.FieldPtr(); 
-        }
+        static void Main(string[] args) => MethPropWithInstMemo.FieldPtr();
+    }
+
+    class Program : NewBaseType
+    {
     }
 }
